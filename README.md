@@ -8,6 +8,8 @@
 
 A modern, minimal multi-cloud cost optimization dashboard that helps you monitor, analyze, and optimize your cloud spending across AWS, Google Cloud Platform, and Microsoft Azure.
 
+🚀 **Live Demo**: [https://cloudcost-optimizer-rla66hgu0-emmanuel-c-oguguas-projects.vercel.app](https://cloudcost-optimizer-rla66hgu0-emmanuel-c-oguguas-projects.vercel.app)
+
 ## ✨ Key Features
 
 ### 📊 **Multi-Cloud Cost Monitoring**
