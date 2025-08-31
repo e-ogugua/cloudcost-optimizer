@@ -71,7 +71,7 @@ function App() {
     setIsRefreshing(false)
   }
 
-  const getProviderIcon = (provider: string) => {
+  const getProviderIcon = (_provider: string) => {
     return <Cloud className="h-5 w-5" />
   }
 
