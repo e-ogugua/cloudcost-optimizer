@@ -1,7 +1,16 @@
 {
   "name": "cloudcost-optimizer",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Multi-cloud cost optimization dashboard for AWS, GCP, and Azure - Lightweight open-source alternative to enterprise SaaS",
+  "keywords": ["cloud", "cost-optimization", "aws", "gcp", "azure", "dashboard", "analytics"],
+  "author": "Emmanuel Ogugua <emmachuka@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmanuelos/cloudcost-optimizer.git"
+  },
+  "homepage": "https://cloudcost-optimizer.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +19,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.7",
+    "@tailwindcss/typography": "^0.5.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "recharts": "^3.1.2",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
