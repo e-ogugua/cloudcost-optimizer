@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cloud-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cloud-400;
+}
+
+/* Cloud provider colors */
+.provider-aws { @apply text-aws-600 bg-aws-50 dark:bg-aws-900 dark:text-aws-300; }
+.provider-gcp { @apply text-gcp-600 bg-gcp-50 dark:bg-gcp-900 dark:text-gcp-300; }
+.provider-azure { @apply text-azure-600 bg-azure-50 dark:bg-azure-900 dark:text-azure-300; }
+
+/* Cost level indicators */
+.cost-low { @apply text-cost-low; }
+.cost-medium { @apply text-cost-medium; }
+.cost-high { @apply text-cost-high; }
+.cost-critical { @apply text-cost-critical; }
+
+/* Minimal animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

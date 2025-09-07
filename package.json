@@ -1,0 +1,61 @@
+{
+  "name": "cloudcost-optimizer",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Multi-cloud cost optimization dashboard for AWS, GCP, and Azure - Lightweight open-source alternative to enterprise SaaS",
+  "keywords": [
+    "cloud",
+    "cost-optimization",
+    "aws",
+    "gcp",
+    "azure",
+    "dashboard",
+    "analytics"
+  ],
+  "author": "Emmanuel Ogugua <emmachuka@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmanuelos/cloudcost-optimizer.git"
+  },
+  "homepage": "https://cloudcost-optimizer.vercel.app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.7",
+    "@tailwindcss/typography": "^0.5.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.1.2",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@playwright/test": "^1.55.0",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "jest": "^29.7.0",
+    "playwright": "^1.55.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^7.1.2"
+  }
+}
